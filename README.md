@@ -23,7 +23,7 @@ A comprehensive repository documenting current open-source Large Language Models
 
 | System | Manufacturer | Purpose | Key Specs |
 |--------|--------------|---------|-----------|
-| [Project DIGITS](./docs/hardware/nvidia-digits.md) | NVIDIA | Edge AI | 1 PFLOP FP4, 128GB LPDDR5x |
+| [Project DIGITS](./docs/hardwares/nvidia-digits.md) | NVIDIA | Edge AI | 1 PFLOP FP4, 128GB LPDDR5x |
 | ... | ... | ... | ... |
 
 ## 📊 Performance Comparisons
