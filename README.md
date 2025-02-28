@@ -16,9 +16,8 @@ A comprehensive repository documenting current open-source Large Language Models
 
 | Model Series | Organization | Latest Version | Parameter Range | License |
 |--------------|--------------|----------------|-----------------|---------|
-| [LLaMA](./docs/models/llama.md) | Meta AI | LLaMA 3 | 8B - 70B | Custom |
-| [Mistral](./docs/models/mistral.md) | Mistral AI | Mistral 7B | 7B | Apache 2.0 |
-| [Gemma](./docs/models/gemma.md) | Google | Gemma | 2B - 7B | Custom |
+| [LLaMA](./docs/models/llama.md) | Meta AI | LLaMA 3 | 8B - 405B | Custom |
+| [Deepseek](./docs/models/deepseek.md) | Deepseek AI | Deepseek v3 | 1.3B - 671B | Custom |
 | ... | ... | ... | ... | ... |
 
 ## 💻 Hardware Systems
