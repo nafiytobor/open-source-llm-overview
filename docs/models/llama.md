@@ -2,73 +2,60 @@
 
 ![LLaMA Logo](../../assets/images/models/llama-logo.png)
 
-LLaMA (Large Language Model Meta AI) is a series of open-source large language models developed by Meta AI.
+LLaMA (Large Language Model Meta AI) is a series of open-source large language models developed by Meta AI. This family has evolved through multiple generations, each bringing significant improvements in capabilities and performance.
 
-## Model Versions
+## Model Versions Overview
 
-### LLaMA 3
+| Generation | Release Date | Key Improvements | Parameter Sizes |
+|:-----------|:-------------|:-----------------|:----------------|
+| **LLaMA 1** | March 2023 | First public release | 7B, 13B, 30B, 65B |
+| **LLaMA 2** | July 2023 | Longer context, improved instruction following | 7B, 13B, 70B |
+| **Code LLaMA** | August 2023 | Specialized for code generation | 7B, 13B, 34B, 70B |
+| **LLaMA 3** | April 2024 | Significant quality improvements | 8B, 70B |
+| **LLaMA 3.1** | October 2024 | Enhanced reasoning, longer context | 8B, 70B, 405B |
 
-| Model Name | Parameters | Context Length | Quantized Versions | Release Date | Training Data |
-|------------|------------|----------------|-------------------|--------------|--------------|
-| LLaMA 3 8B | 8B | 8K | GGUF (Q4_K_M) | April 2024 | 15T tokens |
-| LLaMA 3 70B | 70B | 8K | GGUF (Q4_K_M) | April 2024 | 15T tokens |
+## Hardware Requirements
+
+### LLaMA 1
+
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **7B** | FP16 | ~14 GB | ~28 GB | Consumer-grade GPUs (e.g. RTX 3090) can run this |
+| **13B** | FP16 | ~26 GB | ~52 GB | Requires high‑end GPUs (e.g. A100 40GB) |
+| **30B** | FP16 | ~60 GB | ~120 GB | Likely needs multi‑GPU or a high‑end single GPU |
+| **65B** | FP16 | ~130 GB | ~260 GB | Typically deployed on multi‑GPU setups |
 
 ### LLaMA 2
 
-| Model Name | Parameters | Context Length | Quantized Versions | Release Date | Training Data |
-|------------|------------|----------------|-------------------|--------------|--------------|
-| LLaMA 2 7B | 7B | 4K | GGUF (Q4_K_M) | July 2023 | 2T tokens |
-| LLaMA 2 13B | 13B | 4K | GGUF (Q4_K_M) | July 2023 | 2T tokens |
-| LLaMA 2 70B | 70B | 4K | GGUF (Q4_K_M) | July 2023 | 2T tokens |
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **7B** | FP16 | ~14 GB | ~28 GB | Similar to LLaMA 1; commercial usage permitted |
+| **13B** | FP16 | ~26 GB | ~52 GB | As above |
+| **70B** | FP16 | ~140 GB | ~280 GB | Typically requires multi-GPU setups |
+
+### Code LLaMA
+
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **7B** | FP16 | ~14 GB | ~28 GB | Specially tuned for code tasks |
+| **13B** | FP16 | ~26 GB | ~52 GB | |
+| **34B** | FP16 | ~68 GB | ~136 GB | |
+| **70B** | FP16 | ~140 GB | ~280 GB | Requires multi‑GPU or heavy quantization |
+
+### LLaMA 3
+
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **8B** | FP16 | ~16 GB | ~32 GB | Slightly higher requirements due to architecture changes |
+| **70B** | FP16 | ~140 GB | ~280 GB | High‑performance, multi‑GPU recommended |
+
+### LLaMA 3.1
+
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **8B** | FP16 | ~16 GB | ~32 GB | Suitable for consumer‑grade GPUs |
+| **70B** | FP16 | ~140 GB | ~280 GB | |
+| **405B** | FP16 | ~810 GB | ~1620 GB | Massive model requiring specialized infrastructure |
 
 ## Performance Metrics
-
-### General Capability Tests
-
-<div class="chart-container">
-    <canvas id="llama-general-benchmark"></canvas>
-</div>
-
-| Benchmark | LLaMA 3 8B | LLaMA 3 70B | LLaMA 2 7B | LLaMA 2 13B | LLaMA 2 70B |
-|-----------|------------|------------|------------|-------------|-------------|
-| MMLU | 64.2% | 79.5% | 46.9% | 54.8% | 68.9% |
-| HumanEval | 42.7% | 67.2% | 23.7% | 29.8% | 37.5% |
-| GSM8K | 71.3% | 87.8% | 28.7% | 36.8% | 63.2% |
-
-### Specialized Task Performance
-
-<div class="chart-container">
-    <canvas id="llama-specialized-tasks"></canvas>
-</div>
-
-## Architectural Features
-
-LLaMA 3 employs an improved Transformer architecture with key innovations including:
-
-- Optimized attention mechanisms
-- Enhanced positional encoding
-- Improved training methods and data processing
-
-## Deployment Requirements
-
-| Model Version | Min VRAM (FP16) | Recommended VRAM (Quantized) | CPU Memory Requirements |
-|---------------|-----------------|------------------------------|-------------------------|
-| LLaMA 3 8B | 16GB | 8GB (Q4_K_M) | 16GB |
-| LLaMA 3 70B | 140GB | 40GB (Q4_K_M) | 64GB |
-
-## Usage Example
-
-```python
-from transformers import AutoModelForCausalLM, AutoTokenizer
-
-# Load model and tokenizer
-model_name = "meta-llama/Llama-3-8B"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name)
-
-# Generate text
-input_text = "Explain the basic principles of quantum computing:"
-inputs = tokenizer(input_text, return_tensors="pt")
-outputs = model.generate(**inputs, max_length=200)
-result = tokenizer.decode(outputs[0], skip_special_tokens=True)
-print(result)
+tbd

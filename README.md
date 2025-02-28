@@ -1,5 +1,7 @@
 # Open-Source LLM Overview
 
+![Last Updated](https://img.shields.io/github/last-commit/nafiytobor/open-source-llm-overview?label=Last%20Updated)
+
 A comprehensive repository documenting current open-source Large Language Models (LLMs) and AI hardware systems. This project aims to help researchers, developers, and AI enthusiasts quickly understand model specifications and compatible hardware platforms.
 
 ## 🌟 Features
