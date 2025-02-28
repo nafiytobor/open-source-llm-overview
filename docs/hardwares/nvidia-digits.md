@@ -1,6 +1,6 @@
 # NVIDIA Project DIGITS
 
-![NVIDIA Project DIGITS](../../assets/images/hardware/nvidia-project-digits.webp)
+![NVIDIA Project DIGITS](../../assets/images/hardwares/nvidia-project-digits-logo.jpg)
 
 NVIDIA Project DIGITS is a cutting-edge portable AI system designed for high-performance edge computing. Powered by the NVIDIA GB10 Grace Blackwell Superchip, it delivers data center-class AI performance in a portable form factor.
 

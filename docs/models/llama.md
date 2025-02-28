@@ -1,6 +1,6 @@
 # LLaMA Model Series
 
-![LLaMA Logo](../../assets/images/llama-logo.png)
+![LLaMA Logo](../../assets/images/models/llama-logo.png)
 
 LLaMA (Large Language Model Meta AI) is a series of open-source large language models developed by Meta AI.
 
