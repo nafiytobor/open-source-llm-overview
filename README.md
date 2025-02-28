@@ -16,8 +16,8 @@ A comprehensive repository documenting current open-source Large Language Models
 
 | Model Series | Organization | Latest Version | Parameter Range | License |
 |--------------|--------------|----------------|-----------------|---------|
-| [LLaMA](./docs/models/llama.md) | Meta AI | LLaMA 3 | 8B - 405B | Free for research and commercial use |
-| [Deepseek](./docs/models/deepseek.md) | Deepseek AI | Deepseek v3 | 1.3B - 671B | Custom model license |
+| [LLaMA](./docs/models/llama.md) | Meta AI | LLaMA 3.2 | 8B - 405B | Free for research and commercial use |
+| [Deepseek](./docs/models/deepseek.md) | Deepseek AI | Deepseek R1 | 1.3B - 671B | Custom model license |
 | ... | ... | ... | ... | ... |
 
 ## 💻 Hardware Systems
