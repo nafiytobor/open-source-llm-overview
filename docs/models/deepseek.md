@@ -1,6 +1,6 @@
 # DeepSeek Model Series
 
-![DeepSeek Logo](../../assets/images/models/deepseek-logo.png)
+![DeepSeek Logo](../../assets/images/models/deepseek-logo.webp)
 
 DeepSeek is a series of advanced large language models developed by DeepSeek AI. The series spans from lightweight models suitable for edge devices to massive models designed for cutting-edge research and enterprise applications.
 
