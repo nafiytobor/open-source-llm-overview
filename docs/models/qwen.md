@@ -1,6 +1,6 @@
 # Qwen Model Series
 
-![Qwen Logo](../../assets/images/models/qwen-logo.jpg)
+![Qwen Logo](../../assets/images/models/qwen-logo.png)
 
 Qwen (通义千问) is a series of large language models developed by Alibaba Cloud. The series includes text-only models as well as multimodal variants capable of processing images and audio along with text.
 
@@ -17,33 +17,54 @@ Qwen (通义千问) is a series of large language models developed by Alibaba Cl
 
 ## Hardware Requirements
 
-| Model | Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
-|:------|:---------------|:----------|:--------------|:--------------------|:------|
-| **Qwen2.5** | 0.5B | FP16 | ~1 GB | ~2 GB | Suitable for edge devices and mobile applications |
-| **Qwen2.5** | 1.5B | FP16 | ~3 GB | ~6 GB | Entry-level GPUs can run this |
-| **Qwen2.5** | 3B | FP16 | ~6 GB | ~12 GB | Mid-range consumer GPUs can run this |
-| **Qwen2.5** | 7B | FP16 | ~14 GB | ~28 GB | High-end consumer GPUs (e.g., RTX 3090) can run this |
-| **Qwen2.5** | 14B | FP16 | ~28 GB | ~56 GB | Requires high-end GPUs (e.g., A100 40GB) |
-| **Qwen2.5** | 32B | FP16 | ~64 GB | ~128 GB | Likely needs multi-GPU setup |
-| **Qwen2.5** | 72B | FP16 | ~144 GB | ~288 GB | Requires multi-GPU setups |
-| **Qwen2** | 0.5B | FP16 | ~1 GB | ~2 GB | Suitable for edge devices and mobile applications |
-| **Qwen2** | 1.5B | FP16 | ~3 GB | ~6 GB | Entry-level GPUs can run this |
-| **Qwen2** | 7B | FP16 | ~14 GB | ~28 GB | High-end consumer GPUs can run this |
-| **Qwen2** | 14B | FP16 | ~28 GB | ~56 GB | Requires high-end GPUs |
-| **Qwen2** | 72B | FP16 | ~144 GB | ~288 GB | Requires multi-GPU setups |
-| **Qwen1.5** | 0.5B | FP16 | ~1 GB | ~2 GB | Suitable for edge devices and mobile applications |
-| **Qwen1.5** | 1.8B | FP16 | ~3.6 GB | ~7.2 GB | Entry-level GPUs can run this |
-| **Qwen1.5** | 4B | FP16 | ~8 GB | ~16 GB | Mid-range consumer GPUs can run this |
-| **Qwen1.5** | 7B | FP16 | ~14 GB | ~28 GB | High-end consumer GPUs can run this |
-| **Qwen1.5** | 14B | FP16 | ~28 GB | ~56 GB | Requires high-end GPUs |
-| **Qwen1.5** | 32B | FP16 | ~64 GB | ~128 GB | Likely needs multi-GPU setup |
-| **Qwen1.5** | 72B | FP16 | ~144 GB | ~288 GB | Requires multi-GPU setups |
-| **Qwen1.5** | 110B | FP16 | ~220 GB | ~440 GB | Requires specialized multi-GPU infrastructure |
-| **Qwen** | 7B | FP16 | ~14 GB | ~28 GB | Consumer-grade GPUs (e.g., RTX 3090) can run this |
-| **Qwen** | 14B | FP16 | ~28 GB | ~56 GB | Requires high-end GPUs (e.g., A100 40GB) |
-| **Qwen** | 72B | FP16 | ~144 GB | ~288 GB | Typically requires multi-GPU setups |
-| **Qwen-VL** | 7B | FP16 | ~14 GB | ~28 GB | Additional VRAM may be needed for processing images |
-| **Qwen-Audio** | 7B | FP16 | ~14 GB | ~28 GB | Additional VRAM may be needed for processing audio |
+### Qwen2.5
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **0.5B** | FP16 | ~1 GB | ~2 GB | Suitable for edge devices and mobile applications |
+| **1.5B** | FP16 | ~3 GB | ~6 GB | Entry-level GPUs can run this |
+| **3B** | FP16 | ~6 GB | ~12 GB | Mid-range consumer GPUs can run this |
+| **7B** | FP16 | ~14 GB | ~28 GB | High-end consumer GPUs (e.g., RTX 3090) can run this |
+| **14B** | FP16 | ~28 GB | ~56 GB | Requires high-end GPUs (e.g., A100 40GB) |
+| **32B** | FP16 | ~64 GB | ~128 GB | Likely needs multi-GPU setup |
+| **72B** | FP16 | ~144 GB | ~288 GB | Requires multi-GPU setups |
+
+### Qwen2
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **0.5B** | FP16 | ~1 GB | ~2 GB | Suitable for edge devices and mobile applications |
+| **1.5B** | FP16 | ~3 GB | ~6 GB | Entry-level GPUs can run this |
+| **7B** | FP16 | ~14 GB | ~28 GB | High-end consumer GPUs can run this |
+| **14B** | FP16 | ~28 GB | ~56 GB | Requires high-end GPUs |
+| **72B** | FP16 | ~144 GB | ~288 GB | Requires multi-GPU setups |
+
+### Qwen1.5
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **0.5B** | FP16 | ~1 GB | ~2 GB | Suitable for edge devices and mobile applications |
+| **1.8B** | FP16 | ~3.6 GB | ~7.2 GB | Entry-level GPUs can run this |
+| **4B** | FP16 | ~8 GB | ~16 GB | Mid-range consumer GPUs can run this |
+| **7B** | FP16 | ~14 GB | ~28 GB | High-end consumer GPUs can run this |
+| **14B** | FP16 | ~28 GB | ~56 GB | Requires high-end GPUs |
+| **32B** | FP16 | ~64 GB | ~128 GB | Likely needs multi-GPU setup |
+| **72B** | FP16 | ~144 GB | ~288 GB | Requires multi-GPU setups |
+| **110B** | FP16 | ~220 GB | ~440 GB | Requires specialized multi-GPU infrastructure |
+
+### Qwen
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **7B** | FP16 | ~14 GB | ~28 GB | Consumer-grade GPUs (e.g., RTX 3090) can run this |
+| **14B** | FP16 | ~28 GB | ~56 GB | Requires high-end GPUs (e.g., A100 40GB) |
+| **72B** | FP16 | ~144 GB | ~288 GB | Typically requires multi-GPU setups |
+
+### Qwen-VL
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **7B** | FP16 | ~14 GB | ~28 GB | Additional VRAM may be needed for processing images |
+
+### Qwen-Audio
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **7B** | FP16 | ~14 GB | ~28 GB | Additional VRAM may be needed for processing audio |
 
 ## Model Architecture
 
