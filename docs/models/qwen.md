@@ -1,6 +1,6 @@
 # Qwen Model Series
 
-![Qwen Logo](../../assets/images/models/qwen-logo.png)
+![Qwen Logo](../../assets/images/models/qwen-logo.jpg)
 
 Qwen (通义千问) is a series of large language models developed by Alibaba Cloud. The series includes text-only models as well as multimodal variants capable of processing images and audio along with text.
 
