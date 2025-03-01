@@ -20,6 +20,7 @@ A comprehensive repository documenting current open-source Large Language Models
 | [Deepseek](./docs/models/deepseek.md) | Deepseek AI | Deepseek V3 | 1.3B - 671B | Custom model license |
 | [Gemma](./docs/models/gemma.md) | Google | Gemma 2 | 2B - 27B | Apache 2.0 |
 | [Grok](./docs/models/grok.md) | xAI | Grok-1 (open-sourced version) | 314B | Apache 2.0 |
+| [Mistral](./docs/models/mistral.md) | Mistral AI | Mistral Small | 7B - 141B | Apache 2.0 |
 | ... | ... | ... | ... | ... |
 
 ## 💻 Hardware Systems

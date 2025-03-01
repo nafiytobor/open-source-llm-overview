@@ -6,15 +6,15 @@ LLaMA (Large Language Model Meta AI) is a series of open-source large language m
 
 ## Model Versions Overview
 
-| Generation | Release Date | Key Improvements | Parameter Sizes | Input Modalities | Output Modalities |
-|:-----------|:-------------|:-----------------|:----------------|:-----------------|:------------------|
-| **LLaMA 1** | March 2023 | First public release | 7B, 13B, 30B, 65B | Text | Text |
-| **LLaMA 2** | July 2023 | Longer context, improved instruction following | 7B, 13B, 70B | Text | Text |
-| **Code LLaMA** | August 2023 | Specialized for code generation | 7B, 13B, 34B, 70B | Text | Text |
-| **LLaMA 3** | April 2024 | Significant quality improvements | 8B, 70B | Text | Text, Code |
-| **LLaMA 3.1** | July 2024 | Enhanced reasoning, longer context | 8B, 70B, 405B | Multilingual Text | Text, Code |
-| **LLaMA 3.2 Quantized** | September 2024 | A new mix of publicly available online data. | 1B, 3B | Multilingual Text, Code | Multilingual Text, Code |
-| **LLaMA 3.2 Vision** | September 2024 | A multimodal large language models. | 11B, 90B | Text, Image | Text |
+| Model | Release Date | Parameter Size | Key Features | Input Modalities | Output Modalities |
+|:------|:-------------|:---------------|:-------------|:-----------------|:------------------|
+| **LLaMA 1** | March 2023 | 7B, 13B, 30B, 65B | First public release | Text | Text |
+| **LLaMA 2** | July 2023 | 7B, 13B, 70B | Longer context, improved instruction following | Text | Text |
+| **Code LLaMA** | August 2023 | 7B, 13B, 34B, 70B | Specialized for code generation | Text | Text |
+| **LLaMA 3** | April 2024 | 8B, 70B | Significant quality improvements | Text | Text, Code |
+| **LLaMA 3.1** | July 2024 | 8B, 70B, 405B | Enhanced reasoning, longer context | Multilingual Text | Text, Code |
+| **LLaMA 3.2 Quantized** | September 2024 | 1B, 3B | A new mix of publicly available online data | Multilingual Text, Code | Multilingual Text, Code |
+| **LLaMA 3.2 Vision** | September 2024 | 11B, 90B | Multimodal large language model | Text, Image | Text |
 
 
 ## Hardware Requirements
