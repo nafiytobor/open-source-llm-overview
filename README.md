@@ -21,6 +21,7 @@ A comprehensive repository documenting current open-source Large Language Models
 | [Gemma](./docs/models/gemma.md) | Google | Gemma 2 | 2B - 27B | Apache 2.0 |
 | [Grok](./docs/models/grok.md) | xAI | Grok-1 (open-sourced version) | 314B | Apache 2.0 |
 | [Mistral](./docs/models/mistral.md) | Mistral AI | Mistral Small | 7B - 141B | Apache 2.0 |
+| [Qwen](./docs/models/qwen.md) | Alibaba Cloud | Qwen/Qwen-VL/Qwen-Audio | 7B - 72B | Tongyi Qianwen License |
 | ... | ... | ... | ... | ... |
 
 ## 💻 Hardware Systems
