@@ -32,8 +32,7 @@ A comprehensive repository documenting current open-source Large Language Models
 | ... | ... | ... | ... |
 
 ## 📊 Performance Comparisons
-
-TBD
+See our comprehensive [model benchmark comparisons](./docs/benchmarks/benchmark.md).
 
 ## 🤝 Contributing
 
