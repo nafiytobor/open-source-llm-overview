@@ -17,7 +17,9 @@ A comprehensive repository documenting current open-source Large Language Models
 | Model Series | Organization | Latest Version | Parameter Range | License |
 |--------------|--------------|----------------|-----------------|---------|
 | [LLaMA](./docs/models/llama.md) | Meta AI | LLaMA 3.2 | 8B - 405B | Free for research and commercial use |
-| [Deepseek](./docs/models/deepseek.md) | Deepseek AI | Deepseek R1 | 1.3B - 671B | Custom model license |
+| [Deepseek](./docs/models/deepseek.md) | Deepseek AI | Deepseek V3 | 1.3B - 671B | Custom model license |
+| [Gemma](./docs/models/gemma.md) | Google | Gemma 2 | 2B - 27B | Apache 2.0 |
+| [Grok](./docs/models/grok.md) | xAI | Grok-1 (open-sourced version) | 314B | Apache 2.0 |
 | ... | ... | ... | ... | ... |
 
 ## 💻 Hardware Systems
