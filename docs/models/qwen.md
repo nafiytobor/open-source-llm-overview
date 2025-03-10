@@ -8,6 +8,7 @@ Qwen (通义千问) is a series of large language models developed by Alibaba Cl
 
 | Model | Release Date | Parameter Size | Key Features | Input Modalities | Output Modalities |
 |:------|:-------------|:---------------|:-------------|:-----------------|:------------------|
+| **QwQ-32B-Preview** | November 2024 | 32B | Experimental reasoning-focused model, based on Qwen2.5, released under Apache 2.0 license with weights only (no dataset/training details), comparable to OpenAI's o1 in reasoning tasks | Text | Text |
 | **Qwen2.5** | 2024 | 0.5B, 1.5B, 3B, 7B, 14B, 32B, 72B | Decoder-only dense language model, provides both base and instruction-tuned variants, pretrained on latest datasets containing up to 18 trillion tokens, with significant improvements in instruction following, long text generation, understanding structured data, and generating structured outputs | Text | Text |
 | **Qwen2** | 2024 | 0.5B, 1.5B, 7B, 14B, 72B | Decoder-only dense language model supporting multilingual processing with up to 128K context length, uses Grouped-Query Attention (GQA) mechanism, optimized for inference speed and memory usage | Text | Text |
 | **Qwen1.5** | 2024 | 0.5B, 1.8B, 4B, 7B, 14B, 32B, 72B, 110B | Decoder-only dense language model supporting multilingual processing with up to 32K context length, pretrained on high-quality data and instruction-tuned | Text | Text |
@@ -16,6 +17,11 @@ Qwen (通义千问) is a series of large language models developed by Alibaba Cl
 | **Qwen-Audio** | November 2023 | 7B | Audio-language model covering over 30 tasks and various audio types including human speech, natural sounds, and music, with general audio understanding capabilities, handles multi-turn dialogues and supports various audio-centered scenarios | Text, Audio | Text |
 
 ## Hardware Requirements
+
+### QwQ-32B-Preview
+| Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
+|:---------------|:----------|:--------------|:--------------------|:------|
+| **32B** | FP16 | ~64 GB | ~128 GB | Likely needs multi-GPU setup, focused on reasoning tasks |
 
 ### Qwen2.5
 | Parameter Size | Precision | VRAM Required | System RAM Required | Notes |
